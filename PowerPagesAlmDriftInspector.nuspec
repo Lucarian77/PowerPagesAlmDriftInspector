@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>PowerPagesAlmDriftInspector</id>
+    <version>1.0.0.0</version>
+    <title>Power Pages ALM Drift Inspector</title>
+    <authors>Adrian Lucaci</authors>
+    <owners>Adrian Lucaci</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>XrmToolBox plugin for comparing Power Pages site settings between Dataverse environments to identify ALM drift.</description>
+    <summary>Compare Power Pages site settings across Dataverse environments to detect ALM drift.</summary>
+    <releaseNotes>Initial public release.</releaseNotes>
+    <projectUrl>REPLACE_WITH_YOUR_GITHUB_REPO_URL</projectUrl>
+    <iconUrl>REPLACE_WITH_PUBLIC_64PX_PNG_URL</iconUrl>
+    <tags>XrmToolBox Power Pages Dataverse Portal ALM Drift Comparison</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="XrmToolBox" version="[1.2025.10.74, )" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\PowerPagesAlmDriftInspector.dll" target="Plugins\net48" />
+  </files>
+</package>
