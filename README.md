@@ -65,6 +65,7 @@ Install directly from the XrmToolBox Tool Library once published.
 - Validate deployment completeness after release
 - Detect missing authentication, search, or portal configuration values
 - Troubleshoot unexpected Power Pages behavior between environments
+<img width="3667" height="1880" alt="image" src="https://github.com/user-attachments/assets/10144ae8-7035-46e0-8d5a-daa473e92528" />
 
 
 ## License
