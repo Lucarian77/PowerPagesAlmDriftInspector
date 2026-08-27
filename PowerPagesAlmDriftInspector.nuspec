@@ -2,22 +2,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>PowerPagesAlmDriftInspector</id>
-    <version>1.0.3</version>
+    <version>1.2026.1.4</version>
     <title>Power Pages ALM Drift Inspector</title>
     <authors>Adrian Lucaci</authors>
     <owners>Adrian Lucaci</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <description>XrmToolBox plugin for comparing Power Pages site settings between Dataverse environments to identify ALM drift.</description>
-    <summary>Compare Power Pages site settings across Dataverse environments to detect ALM drift.</summary>
-    <releaseNotes>Added public logo URL for XrmToolBox Tool Library validation.</releaseNotes>
+    <description>XrmToolBox plugin for comparing Power Pages site settings across Dataverse environments to identify ALM drift. Supports both Standard/older adx_* Power Pages sites and Enhanced mspp_* Power Pages sites, with data-model detection per website.</description>
+    <summary>Compare Standard and Enhanced Power Pages site settings across Dataverse environments and detect ALM drift.</summary>
+    <releaseNotes>Version 1.2026.1.4 adds Standard/older Power Pages support through adx_website and adx_sitesetting while retaining Enhanced mspp_website and mspp_sitesetting support. Data-model detection is per website and supports Standard-to-Standard, Enhanced-to-Enhanced, and mixed-model comparisons. This release also adds visible data-model evidence, safer Target website selection, clean export filenames, and data-model context in Excel and HTML evidence.</releaseNotes>
     <projectUrl>https://github.com/Lucarian77/PowerPagesAlmDriftInspector</projectUrl>
     <repository type="git" url="https://github.com/Lucarian77/PowerPagesAlmDriftInspector" />
     <icon>PowerPagesAlmDriftInspector_64.png</icon>
     <iconUrl>https://raw.githubusercontent.com/Lucarian77/PowerPagesAlmDriftInspector/main/PowerPagesAlmDriftInspector_64.png</iconUrl>
     <readme>README.md</readme>
     <copyright>Copyright © Adrian Lucaci 2026</copyright>
-    <tags>XrmToolBox Power Pages Dataverse Portal ALM Drift Comparison</tags>
+    <tags>XrmToolBox Power Pages Dataverse Portal ALM Drift Comparison Standard Enhanced adx mspp</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.8">
         <dependency id="XrmToolBox" version="[1.2025.10.74, )" />
@@ -26,8 +26,10 @@
   </metadata>
 
   <files>
-  <file src="bin\Release\PowerPagesAlmDriftInspector.dll" target="lib\net48\Plugins" />
-  <file src="README.md" target="" />
-  <file src="Resources\PowerPagesAlmDriftInspector_64.png" target="" />
-</files>
+    <file src="bin\Release\PowerPagesAlmDriftInspector.dll" target="lib\net48\Plugins" />
+    <file src="bin\Release\DocumentFormat.OpenXml.dll" target="lib\net48\Plugins" />
+    <file src="README.md" target="" />
+    <file src="RELEASE_NOTES_1.2026.1.4.md" target="" />
+    <file src="Resources\PowerPagesAlmDriftInspector_64.png" target="" />
+  </files>
 </package>
